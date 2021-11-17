@@ -1,0 +1,7 @@
+<div class="parent">
+    <h2>parent Component</h2>
+    <ul>
+        <li *ngFor="let chi of childs">{{chi}}</li>
+    </ul>
+    <app-child [child]="currentChild" (newChildEvent)="addChild($event)"></app-child>
+</div>
